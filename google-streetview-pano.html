@@ -36,15 +36,15 @@ You can also use the position attribute and set it to a position with a computed
 -->
 
 <dom-module id="google-streetview-pano">
-  <style>
-    :host {
-      display: block;
-    }
-    #pano {
-      height: 100%;
-    }
-  </style>
   <template>
+    <style>
+      :host {
+        display: block;
+      }
+      #pano {
+        height: 100%;
+      }
+    </style>
     <google-maps-api api-key="{{apiKey}}" version="{{version}}"
                      libraries="{{libraries}}"
                      client-id="{{clientId}}"
